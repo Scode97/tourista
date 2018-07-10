@@ -8,19 +8,19 @@
 
 <br>
 <div class="row">
-     <div class="col-lg-8 col-md-10 mx-auto">
-            <h1><u>{{destination.name}}</u></h1> <br>
+     <div class="col-lg-8 col-md-10 mx-auto py-3 mb-3">
+            <h1 style="text-align: center;"><br><u>{{destination.name}}</u></h1> <br>
              <div class="text-center">
  <p class="rounded"><img src="{{destination.pretty_picture.url}}" style="width:800px"></p>
  </div>
 
    
    <p class="text-center">{{destination.description}}</p><br>
-   <h6><u>Activities</u></h6>
+   <h6 style="color: grey; "><u><b>Activities</b></u></h6>
 
     <p>{{destination.activities}}</p><br>
 
- <h6><u>Optimal visiting season</u></h6><p>{{destination.optimal_visiting_season}}</p>
+ <h6 style="color: grey;"><u><b>Optimal visiting season</u></b></h6><p>{{destination.optimal_visiting_season}}</p>
 
    
     
@@ -32,7 +32,7 @@
     <a href="{% url 'destination-delete' destination.id %}">
        
 
-        <button type="button" class="btn btn-outline-dark btn-sm">Delete</button>
+        <button type="button" class="btn btn-outline-dark btn-sm" style="margin: 20px; text-align: center;">Delete</button>
     </a>
     <br>
     <br>
